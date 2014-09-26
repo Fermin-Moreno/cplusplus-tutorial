@@ -9,8 +9,8 @@ bool showBufferOverrun = false;
 
 void ShowAges();
 void BadIndex();
-void TypeValues();
 void BufferOverrun();
+void Iterating();
 
 
 int main(){
@@ -19,11 +19,11 @@ int main(){
 	
 	BadIndex();
 
-	TypeValues();
-
 	if(showBufferOverrun){
 		BufferOverrun();
 	}
+
+	Iterating();
 
 	cout << "\n\n";
 	system("pause");
@@ -59,26 +59,29 @@ void BadIndex(){
 }
 
 
-void TypeValues(){
-
-	int ages[1];
-
-	ages[0] = 'c';
-
-	char codes[1];
-
-	codes[0] = 90;
-
-	cout << "Char 'c' inside array of int: " << ages[0] << endl;
-	cout << "Int '90' inside array of char: " << codes[0] << endl;
-
-}
-
-
 // This will throw a error when executed, but when compiling
 void BufferOverrun(){
 	
 	int ages[5];
 
 	ages[5] = 10;
+}
+
+
+void Iterating(){
+
+	int ages[4];
+	int agesLength = 4;
+
+	for (int i = 0; i < agesLength; i++)
+	{
+		ages[i] = i;
+	}
+
+	cout << "Iterating by the array: ";
+	for (int i = 0; i < agesLength; i++)
+	{
+		cout << ages[i] << ", ";
+	}
+
 }

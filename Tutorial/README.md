@@ -1,4 +1,5 @@
 # Algoritmos C++
 
-Aqui colocarei exemplos de algoritmos que são frequentemente utilizados nos projetos e também idéias e padrões que ajudaram a desenvolver.
+
+This GitBook will be created to show examples of c++ algorithms that frequently are used in projects. Not just showing good code I will try to show bad codes that will make break your application.
 

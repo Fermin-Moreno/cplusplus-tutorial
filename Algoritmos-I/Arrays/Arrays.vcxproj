@@ -11,8 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{F12286BC-A48D-49D3-B8D7-473970FD229B}</ProjectGuid>
-    <RootNamespace>My02Arrays</RootNamespace>
+    <ProjectGuid>{44330666-1189-4B23-905C-70F6D1B87A38}</ProjectGuid>
+    <RootNamespace>Arrays</RootNamespace>
+    <ProjectName>02 - Arrays</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

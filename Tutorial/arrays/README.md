@@ -1,8 +1,6 @@
 # Arrays
 
-To create arrays in c++ just add brackets __"[]"__ to variable name and inside the size of the array. Remembering the index begin with 0.
-
-To access or attribute value, use the brackets with the index number.
+Simple example of array of integers.
 
 ```c++
 #include <iostream>
@@ -25,4 +23,45 @@ int main(){
 
 ```
 
+## Bad Index
 
+In this example, the access to an invalid index will bring trash from the memory.
+
+```c++
+
+    int ages[5];
+
+    cout << "Bad Index: ";
+    cout << ages[6] << "\n\n";
+
+```
+
+## Buffer Overrun
+
+This code will __thrown an error__ when be executed, but don't when be compiled. Just some warnings in the gcc line command.
+
+```c++
+
+    int ages[5];
+
+	ages[5] = 10;
+
+```
+
+## Iterating
+
+```c++
+
+    int ages[4];
+	int agesLength = 4;
+
+	for (int i = 0; i < agesLength; i++)
+	{
+		ages[i] = i;
+	}
+
+	for (int i = 0; i < agesLength; i++)
+	{
+		cout << ages[i] << ", ";
+	}
+```
